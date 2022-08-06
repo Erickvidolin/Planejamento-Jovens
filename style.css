@@ -12,8 +12,10 @@ body {
   z-index: -1;
   position: fixed;
   opacity: 40%;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
+  margin-top: 15rem;
+  margin-left: 3rem;
 }
 
 .imgfm {
@@ -101,13 +103,12 @@ h3 {
 
   background: linear-gradient(70deg, #5929db, #e1f015);
 
-  -webkit-animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -webkit-animation: scale-in 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
-  animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+  animation: scale-in 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.cronograma{
-
+.cronograma {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -116,7 +117,7 @@ h3 {
   margin-top: 6rem;
 }
 
-.item{
+.item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,21 +125,20 @@ h3 {
   z-index: 5;
 }
 
-.item h3{
+.item h3 {
   font-size: 1.5rem;
 }
-.header{
+.header {
   display: flex;
- justify-content: flex-end;
+  justify-content: flex-end;
 }
 
-.close-btn{
+.close-btn {
   font-size: 2rem;
   background-color: transparent;
   border: none;
   margin-right: 0.5rem;
 }
-
 
 @media (max-width: 400px) {
   .d1 {
@@ -152,14 +152,13 @@ h3 {
     gap: 1rem;
   }
 
-  .item h3{
+  .item h3 {
     font-size: 1.1rem;
   }
 
-  .cronograma{
+  .cronograma {
     gap: 3rem;
   }
-  
 }
 
 @media (min-width: 400px) {
@@ -174,7 +173,7 @@ h3 {
     gap: 1rem;
   }
 
-  .cronograma{
+  .cronograma {
     gap: 2.5rem;
   }
 }
@@ -198,6 +197,10 @@ h3 {
   .jovem {
     gap: 1rem;
   }
+
+  .imgf {
+    margin-left: 5rem;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -220,5 +223,9 @@ h3 {
 
   .jovem {
     gap: 2rem;
+  }
+
+  .imgf {
+    margin-left: 7rem;
   }
 }
