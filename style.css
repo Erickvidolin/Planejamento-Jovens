@@ -148,7 +148,7 @@ h3 {
   margin-right: 0.5rem;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 321px) {
   .d1 {
     border: solid;
     border-radius: 1rem;
@@ -170,6 +170,33 @@ h3 {
 
   .cronograma2 {
     gap: 3rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .d1 {
+    border: solid;
+    border-radius: 1rem;
+    width: 90%;
+    height: 50%;
+  }
+
+  .jovem {
+    gap: 1rem;
+  }
+
+  .item h3 {
+    font-size: 1.1rem;
+  }
+
+  .cronograma {
+    gap: 3rem;
+  }
+
+  .cronograma2 {
+    gap: 1.5rem;
+    font-size: 1rem;
   }
 }
 
