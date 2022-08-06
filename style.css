@@ -217,6 +217,10 @@ h3 {
   .imgf {
     margin-left: 5rem;
   }
+
+  .cronograma2 {
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 1000px) {
