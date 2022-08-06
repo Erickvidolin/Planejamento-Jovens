@@ -20,39 +20,131 @@
 
     <div class="jovem">
       <h1 class="planejamento">Planejamento 2°Semestre 2022</h1>
-
-      <div class="d1">
-        <h3>05/08</h3>
-        <h3>Runião na casa do Carlos ás 18:30</h3>
-      </div>
       <div class="d1">
         <h3>20/08</h3>
         <h3>Doação de Sangue ( Erastinho )</h3>
       </div>
-      <div class="d1">
+
+      <button class="d1" onclick="openModal('modal1')">
         <h3>27/08</h3>
         <h3>J.A Desafinados ( Iasd Jardim Paulista)</h3>
-      </div>
-      <div class="d1">
+      </button>
+
+      <button class="d1" onclick="openModal('modal2')">
         <h3>03/09</h3>
         <h3>Social do Pastel ( Encontrar Local)</h3>
-      </div>
+      </button>
+
       <div class="d1">
-        <h3>10/09</h3>
+        <h3>01/10</h3>
         <h3>J.A Flashback ( Iasd Jardim Ceccon )</h3>
       </div>
-      <div class="d1">
-        <h3>08/10</h3>
-        <h3>J.A Programa para crianças ( Iasd Campina )</h3>
-      </div>
+
       <div class="d1">
         <h3>22/10</h3>
         <h3>J.A ( Iasd Menino Deus )</h3>
       </div>
+
       <div class="d1">
         <h3>04/12</h3>
         <h3>Saida para Antonina ( Celebração e Encerramento do ano )</h3>
       </div>
+
     </div>
+
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <img class="imgfm" src="./ja003.png" alt="" />
+        <div class="header">
+          <button class="close-btn" onclick="closeModal('modal1')">X</button>
+        </div>
+        <div class="cronograma">
+          <div class="item">
+            <h3>01 - Abertura</h3>
+            <h3>Apresentadores: Nina e Edmilson</h3>
+          </div>
+          <div class="item">
+            <h3>02 - Louvor</h3>
+            <h3>Lucas, Carol, Stefany e Erick</h3>
+          </div>
+          <div class="item">
+            <h3>03 - Oração</h3>
+            <h3>Carlos</h3>
+          </div>
+          <div class="item">
+            <h3>04 - Boas vindas</h3>
+            <h3>Apresentadores: Nina e Edmilson</h3>
+          </div>
+          <div class="item">
+            <h3>05 - Apresentação desafinados</h3>
+            <h3>4 pessoas</h3>
+          </div>
+          <div class="item">
+            <h3>06 - Dinâmica</h3>
+            <h3>Qual é a música</h3>
+          </div>
+          <div class="item">
+          <h3>07 - Apresentação desafinados</h3>
+          <h3>4 pessoas</h3>
+        </div>
+        <div class="item">
+          <h3>08 - Meditação</h3>
+          <h3>Pr. Rodrigo</h3>
+        </div>
+        <div class="item">
+          <h3>09 - Premiação</h3>
+        </div>
+        <div class="item">
+          <h3>08 - Música especial</h3>
+          <h3>Tu és santo</h3>
+        </div>
+        <div class="item">
+          <h3>08 - Oração final</h3>
+          <h3>Pr Rodrigo</h3>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <img class="imgfm" src="./ja003.png" alt="" />
+        <div class="header">
+          <button class="close-btn" onclick="closeModal('modal2')">X</button>
+        </div>
+        <div class="cronograma">
+          <div class="item">
+            <h3>01 - Recepção</h3>
+            <h3>Lucas e Carlos</h3>
+          </div>
+          <div class="item">
+            <h3>02 - Cobrar</h3>
+            <h3>Erick e Kesley</h3>
+          </div>
+          <div class="item">
+            <h3>03 - Fechar Pastéis</h3>
+            <h3>Toda a equipe</h3>
+          </div>
+          <div class="item">
+            <h3>04 - Fritar Pastéis</h3>
+            <h3>Nina e Stefany</h3>
+          </div>
+          <div class="item">
+            <h3>05 - Brincadeiras e roda social</h3>
+            <h3>Lucas e Carlos</h3>
+          </div>
+          <div class="item">
+            <h3>06 - Momento espiritual</h3>
+            <h3>Pr Rodrigo</h3>
+          </div>
+          <div class="item">
+          <h3>07 - Limpeza e organização do local</h3>
+          <h3>Toda a equipe</h3>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
   </body>
 </html>

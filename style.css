@@ -1,23 +1,32 @@
-
 * {
   margin: 0;
   padding: 0;
-  font-family:'Marcador Permanente', cursivo
+  font-family: 'Marcador Permanente', cursivo;
 }
 body {
   background: linear-gradient(70deg, #5929db, #e1f015);
   font-family: 'Chewy', cursivo;
 }
 
-.imgf{
+.imgf {
   z-index: -1;
-  position:fixed;
-  opacity:40%;
+  position: fixed;
+  opacity: 40%;
   width: 100%;
   height: 100%;
 }
 
-.img-nav{
+.imgfm {
+  z-index: 2;
+  position: absolute;
+  opacity: 40%;
+  width: 80%;
+  height: 80%;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.img-nav {
   width: 10rem;
 }
 
@@ -26,9 +35,9 @@ body {
   height: 100vh;
 }
 
-.d1{
+.d1 {
   border: solid;
-border-style: double;
+  border-style: double;
   border-radius: 1rem;
   width: 30%;
   display: flex;
@@ -36,6 +45,8 @@ border-style: double;
   text-align: center;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .jovem {
@@ -50,7 +61,7 @@ border-style: double;
   margin-right: 5%;
   margin-bottom: 1rem;
   gap: 1rem;
-  font-family:  'Titan One', cursivo;
+  font-family: 'Titan One', cursivo;
 }
 
 .nav-bar {
@@ -61,61 +72,145 @@ border-style: double;
   height: 7rem;
 }
 
-.planejamento{
-  font-family:'Titan One', cursivo;
+.planejamento {
+  font-family: 'Titan One', cursivo;
 }
 
-h3{
-  font-family:  'Titan One', cursivo;
+h3 {
+  font-family: 'Titan One', cursivo;
 }
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  display: none;
+}
+
+.modal-content {
+  margin: 1rem auto;
+  width: 90%;
+  height: 95%;
+  background-color: white;
+  padding: 0;
+  box-shadow: 0 0 2px #fff;
+
+  background: linear-gradient(70deg, #5929db, #e1f015);
+
+  -webkit-animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+
+  animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+}
+
+.cronograma{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 6rem;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.item h3{
+  font-size: 1.5rem;
+}
+.header{
+  display: flex;
+ justify-content: flex-end;
+}
+
+.close-btn{
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  margin-right: 0.5rem;
+}
+
 
 @media (max-width: 400px) {
-
-  .d1{
+  .d1 {
     border: solid;
     border-radius: 1rem;
     width: 90%;
     height: 50%;
   }
 
-  .jovem{
-    gap:1rem;
+  .jovem {
+    gap: 1rem;
+  }
+
+  .item h3{
+    font-size: 1.1rem;
+  }
+
+  .cronograma{
+    gap: 3rem;
+  }
+  
+}
+
+@media (min-width: 400px) {
+  .d1 {
+    border: solid;
+    border-radius: 1rem;
+    width: 90%;
+    height: 50%;
+  }
+
+  .jovem {
+    gap: 1rem;
+  }
+
+  .cronograma{
+    gap: 2.5rem;
   }
 }
 
 @media (min-width: 600px) {
-
-.planejamento{
+  .planejamento {
     font-size: 3rem;
   }
 
-  h3{
+  h3 {
     font-size: 2rem;
   }
 
-  .d1{
+  .d1 {
     border: solid;
     border-radius: 1rem;
     width: 90%;
     height: 50%;
   }
 
-  .jovem{
-    gap:1rem;
+  .jovem {
+    gap: 1rem;
   }
 }
 
 @media (min-width: 1000px) {
-  .planejamento{
+  .planejamento {
     font-size: 3rem;
     margin-top: 10rem;
   }
 
-  h3{
+  h3 {
     font-size: 1.5rem;
   }
 
-  .d1{
+  .d1 {
     border: solid;
     border-style: double;
     border-radius: 1rem;
@@ -123,8 +218,7 @@ h3{
     height: 50%;
   }
 
-  .jovem{
-    gap:2rem;
+  .jovem {
+    gap: 2rem;
   }
 }
-
