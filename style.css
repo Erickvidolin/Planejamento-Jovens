@@ -39,7 +39,6 @@ body {
 
 .d1 {
   border: solid;
-  border-style: double;
   border-radius: 1rem;
   width: 30%;
   display: flex;
@@ -49,6 +48,7 @@ body {
   justify-content: center;
   cursor: pointer;
   background-color: transparent;
+  border-color: black;
 }
 
 .jovem {
@@ -195,7 +195,7 @@ h3 {
   }
 
   .cronograma2 {
-    gap: 1.5rem;
+    gap: 0.8rem;
     font-size: 1rem;
   }
 }
@@ -218,6 +218,36 @@ h3 {
 
   .cronograma2 {
     gap: 1.2rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .planejamento {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .d1 {
+    border: solid;
+    border-radius: 1rem;
+    width: 90%;
+    height: 50%;
+  }
+
+  .jovem {
+    gap: 1rem;
+  }
+
+  .imgf {
+    margin-left: 5rem;
+  }
+
+  .cronograma2 {
+    gap: 0.5rem;
+    margin-top: -1rem;
   }
 }
 
@@ -246,7 +276,36 @@ h3 {
   }
 
   .cronograma2 {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .planejamento {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .d1 {
+    border: solid;
+    border-radius: 1rem;
+    width: 90%;
+    height: 50%;
+  }
+
+  .jovem {
     gap: 1rem;
+  }
+
+  .imgf {
+    margin-left: 5rem;
+  }
+
+  .cronograma2 {
+    gap: 4rem;
   }
 }
 
@@ -274,5 +333,19 @@ h3 {
 
   .imgf {
     margin-left: 7rem;
+  }
+
+  .cronograma2 {
+    gap: 0.1rem;
+  }
+
+  .item h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .cronograma2 {
+    gap: 1.4rem;
   }
 }
